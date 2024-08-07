@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const posts = await getCollection("songs");
+---
+
+<Base title="Sånger">
+  <main>
+    <section>
+      <ul>
+        {
+          posts.map((post) => (
+            <li>
+              <a href={`/songs/${post.slug}/`}>{post.data.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Base>

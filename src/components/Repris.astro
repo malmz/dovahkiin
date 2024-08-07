@@ -1,0 +1,26 @@
+<section class="repris">
+  <slot />
+</section>
+
+<style>
+  .repris {
+    --sym-size: 1.4rem;
+    --sym-margin: 0.25rem;
+  }
+
+  .repris :global(p):first-of-type::before {
+    content: "𝄆";
+    margin-right: var(--sym-margin);
+    font-size: var(--sym-size);
+    transform: translateY(0.1rem);
+    display: inline-block;
+  }
+
+  .repris :global(p):last-of-type::after {
+    content: "𝄇";
+    margin-left: var(--sym-margin);
+    font-size: var(--sym-size);
+    transform: translateY(0.1rem);
+    display: inline-block;
+  }
+</style>

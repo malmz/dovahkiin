@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+const posts = await getCollection("songs");
+---
+
+<Base title="Sånghäfte">
+  <main>
+    <h1>Ett sånghäfte för chalmers datateknologer</h1>
+    <p>
+      En personling samling sånger man hittat runt campus. Texten finns
+      tillgängliga med syfte att underlätta för de som arrar sittningar eller
+      annat festligt, det ska inte vara så svårt att hitta lite visor.
+    </p>
+    <section>
+      <ul>
+        {
+          posts.map((post) => (
+            <li>
+              <a href={`/songs/${post.slug}/`}>{post.data.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Base>

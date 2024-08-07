@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Base from "./Base.astro";
+
+type Props = CollectionEntry<"songs">["data"];
+
+const { name, text, music, melody, from, misc } = Astro.props;
+---
+
+<Base title={name}>
+  <main>
+    <section class="info">
+      <h1>{name}</h1>
+      {
+        melody && (
+          <p>
+            <em>Mel: {melody}</em>
+          </p>
+        )
+      }
+      {
+        text && (
+          <p>
+            <em>Av {text}</em>
+          </p>
+        )
+      }
+      {
+        from && (
+          <p>
+            <em>Ur {from}</em>
+          </p>
+        )
+      }
+    </section>
+    <section>
+      <slot />
+    </section>
+  </main>
+</Base>
+
+<style>
+  .info > p {
+    margin-block: 0.25rem;
+  }
+</style>
