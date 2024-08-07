@@ -9,8 +9,8 @@ Va människor va lite mer laid back
 
 _dudududu du du du du du_
 
-Köpte man nått på en marknad
-Eller bytte till sig nått mot en päls
+Köpte man nått på en marknad  
+Eller bytte till sig nått mot en päls  
 Behövde de inte va kompatibelt med Windows 7
 
 _dudududu du du du du du_
@@ -21,10 +21,10 @@ _duuuUUUUuuuu_
 
 Microsofts operativsystem
 
-Windows 1
-Windows 2
-Windows 3
-Windows fyr
-Windows 5
-Windows 6
+Windows 1  
+Windows 2  
+Windows 3  
+Windows fyr  
+Windows 5  
+Windows 6  
 **Windows 7!**
