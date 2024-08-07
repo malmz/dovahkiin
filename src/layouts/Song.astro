@@ -4,7 +4,7 @@ import Base from "./Base.astro";
 
 type Props = CollectionEntry<"songs">["data"];
 
-const { name, text, music, melody, from, misc } = Astro.props;
+const { name, wide, text, music, melody, from, misc } = Astro.props;
 ---
 
 <Base title={name}>
@@ -33,7 +33,7 @@ const { name, text, music, melody, from, misc } = Astro.props;
         )
       }
     </section>
-    <section>
+    <section class="content" class:list={["content", { wide }]}>
       <slot />
     </section>
   </main>
@@ -42,5 +42,17 @@ const { name, text, music, melody, from, misc } = Astro.props;
 <style>
   .info > p {
     margin-block: 0.25rem;
+  }
+
+  .content {
+    --minFontSize: 80%;
+    --maxFontSize: 24px;
+    --scaler: 3.5vw;
+    font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+    line-height: 1.4;
+
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    overflow-x: auto;
   }
 </style>

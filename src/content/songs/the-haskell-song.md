@@ -2,6 +2,7 @@
 name: The Haskell Song
 melody: Man ska ha husvagn
 text: Joel Hansell
+wide: true
 ---
 
 Jag har prövat nästan alla sätt att koda på  

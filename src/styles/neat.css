@@ -47,11 +47,11 @@ code {
 body {
     background-color: var(--light);
     margin: 0;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
 }
 
 main {
-    max-width: 80ch;
+    max-width: 70ch;
     margin-inline: auto;
 }
 

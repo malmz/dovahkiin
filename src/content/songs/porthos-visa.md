@@ -12,7 +12,7 @@ En TT börja svinga?
 Nej för fan bara blunda och svälj.
 
 Vilken smörja
-Får jag spörja
+Får jag spörja  
 Vem för fan tror att jag är en älg?  
 Till England vi rider och sedan vad det lider,  
 träffar vi välan på någon pub.  

@@ -1,6 +1,7 @@
 ---
 name: Spritbolaget
 melody: Snickerboa
+wide: true
 ---
 
 Till spritbolaget ränner jag och bankar på dess port.  
